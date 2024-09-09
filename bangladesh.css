@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    overflow: hidden; /* Prevent scrolling while dragging */
+  }
+  
+  .flag {
+    width: 1000px; /* 10 units */
+    height: 600px;  /* 6 units */
+    background-color: #006a4e; /* Dark Green */
+    position: absolute;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Shadow for flag */
+    cursor: grab;
+  }
+  
+  .circle {
+    width: 300px; /* Approx. 3/5th of flag height */
+    height: 300px;
+    background-color: #f42a41; /* Red */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;  /* Vertically centered */
+    left: calc(1000px * 9 / 20);  /* 9/20th of the flag's length */
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for circle */
+  }
+  
